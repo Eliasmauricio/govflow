@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    <title>Pontuação e premiações</title>
+</head>
+
+       <style>
+    
+    body{
+    background-color:rgb(250, 243, 190);    
+    max-width: 1200px;
+    max-width: 320px;
+    width: 100%;
+    padding: 5%;
+    max-height: 280px;
+    display:block;
+    margin: 0 auto;
+    margin: center; 
+}
+img{
+    width: 180px;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+    button{
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 160px;
+    cursor: pointer;
+}
+h1{
+    margin-left: 70px;
+}
+
+       </style>
+
+<body>
+    <h1>Pontuação e Premiação</h1>
+</div>
+<br>
+
+<div class="pontuacao">
+    <img id="img-pontuacao" src="" alt="Imagem Pontuação">           
+</div>
+<br>
+<p id="texto-pontuacao"></p>
+
+<!-- Botão de Voltar -->
+<button id="btn-voltar" onclick="voltar()">
+    <img class="sair" src="/aplicativo/imagem/Voltar 5.png" alt="Sair">
+</button>
+
+<script>
+    // Carregar as informações do localStorage
+    document.getElementById('img-pontuacao').src = localStorage.getItem('imgPontuacao') || '/aplicativo/imagem/Lista 1.png';
+    document.getElementById('texto-pontuacao').textContent = localStorage.getItem('textoPontuacao') || 'Texto de Pontuação Padrão';
+
+    // Função que define o comportamento do botão Voltar
+    function voltar() {
+        window.history.back();  // Vai para a página anterior no histórico do navegador
+    }
+</script>
+
+</body>
+</html>

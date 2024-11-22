@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    <title>Alterar Dados</title>
+    <style>
+    body{
+    background-color:rgb(244, 248, 203);
+    max-width: 1200px;
+    max-width: 330px;
+    width: 100%;
+    padding: 5%;
+    max-height: 280px;
+    display:block;
+    margin: 0 auto;
+    margin: center; 
+}
+h1{
+    margin-left: 30px;
+}
+label{
+    margin-top: 30px;
+
+  }
+        input {          
+            margin-top: 10px;
+        }
+        button{
+    font-family: "Poppins";
+    font-size: 15px;
+    font-weight: 400;
+    height: 25px;
+    width: 125px;
+    margin-top: 20px;
+    margin-left: 90px;
+    background-color: rgb(207, 189, 250);
+    justify-content: center;
+    align-items:center ; 
+    cursor: pointer;
+    border: 0px;
+
+}
+button:hover{
+    color: red;
+}
+        img {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Alteração de Dados do Usuário</h1>
+
+         <form id="formAlteracao">
+        <label for="imgPontuacao">Imagem Pontuação:</label>
+        <input type="text" id="imgPontuacao" name="imgPontuacao" placeholder="URL da Imagem">
+        <br><br>
+
+        <label for="textoPontuacao">Texto Pontuação:</label>
+        <input type="text" id="textoPontuacao" name="textoPontuacao" placeholder="Texto para a pontuação">
+        <br><br>
+
+        <label for="imgMetricas">Imagem Métricas:</label>
+        <input type="text" id="imgMetricas" name="imgMetricas" placeholder="URL da Imagem">
+        <br><br>
+
+        <label for="textoMetricas">Texto Métricas:</label>
+        <input type="text" id="textoMetricas" name="textoMetricas" placeholder="Texto para as métricas">
+        <br><br>
+
+        <label for="imgTutorias">Imagem Tutoriais:</label>
+        <input type="text" id="imgTutorias" name="imgTutorias" placeholder="URL da Imagem">
+        <br><br>
+
+        <label for="textoTutorias">Texto Tutoriais:</label>
+        <input type="text" id="textoTutorias" name="textoTutorias" placeholder="Texto para os tutoriais">
+
+        <button type="button" onclick="salvarAlteracoes()">Salvar Alterações</button>
+    </form>
+
+    <a href="/AlteraçaoAdm.html"><button>Voltar</button></a>
+
+    <script>
+        function salvarAlteracoes() {
+            const imgPontuacao = document.getElementById('imgPontuacao').value;
+            const textoPontuacao = document.getElementById('textoPontuacao').value;
+            const imgMetricas = document.getElementById('imgMetricas').value;
+            const textoMetricas = document.getElementById('textoMetricas').value;
+            const imgTutorias = document.getElementById('imgTutorias').value;
+            const textoTutorias = document.getElementById('textoTutorias').value;
+
+            localStorage.setItem("imgPontuacao", imgPontuacao);
+            localStorage.setItem("textoPontuacao", textoPontuacao);
+            localStorage.setItem("imgMetricas", imgMetricas);
+            localStorage.setItem("textoMetricas", textoMetricas);
+            localStorage.setItem("imgTutorias", imgTutorias);
+            localStorage.setItem("textoTutorias", textoTutorias);
+
+            alert("Alterações salvas!");
+
+            window.location.href = "/AlteraçaoAdm.html";
+        }
+    </script>
+
+</body>
+</html>

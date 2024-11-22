@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    <title>Tela do Gestor</title>
+</head>
+
+       <style>
+    body{
+    background-color:rgb(250, 243, 190);    
+    max-width: 1200px;
+    max-width: 320px;
+    width: 100%;
+    padding: 3%;
+    max-height: 280px;
+    display:block;
+    margin: 0 auto;
+    margin: center; 
+}   
+    h1{ 
+    position: absolute;
+    margin-top: 3%;  
+    margin-left: 0px;
+    max-width: 300px;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 500;
+
+    }
+    h2{
+    position: absolute;
+    max-width: 300px;
+    margin-top: 100px;    
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 400;
+  
+    }
+
+    button{
+    position: absolute;
+    margin-top: 40px;
+    cursor: pointer;
+}    
+    .se{
+    position: absolute;
+    margin-top: 520px;
+    width: 30px;
+    margin-left: 0px;
+    transition: transform 0.2s; 
+    cursor: pointer;
+}
+
+       </style>
+
+<body>
+    <div>
+        <h1>Bem-vindo gestor, <div id="logado" class="aplicativos"></div></h1> 
+        <h2>Métricas claras de produtividade que permitem ajustes rápidos por parte dos gestores.</h2>
+        <a href="/AlteraçaoAdm.html">
+            <img class="gov" src="/aplicativo/imagem/Gestor 1.png" alt="Gestor"> 
+            <img class="se" src="/aplicativo/imagem/Seta. 3.png" alt="seta">
+        </a>
+    </div>
+    <br>
+    <button onclick="sair()"> 
+        <img class="sair" src="/aplicativo/imagem/Sair 1.png" alt="Sair">
+    </button>
+
+    <script src="/HomeAdm.js"></script>
+</body>
+</html>

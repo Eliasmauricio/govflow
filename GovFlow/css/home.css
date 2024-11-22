@@ -1,0 +1,91 @@
+body{
+    background-color:rgb(244, 248, 203);
+    max-width: 1200px;
+    max-width: 320px;
+    width: 100%;
+    padding: 3%;
+    max-height: 280px;
+    display:block;
+    margin: 0 auto;
+    margin: center; 
+}
+h1{
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 400;
+    width: 320px;
+   
+}
+img {
+    margin-left: 50px;
+    width: 60px;
+    margin-left: 120px;
+}
+.flow{
+  margin-top: 5%;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 320px;
+
+}
+.gov{
+  margin-top: 200px;
+  max-width: 250px;
+  width: 100%;
+  margin-left: 10px;
+}
+.pon{
+  margin-left: 55px;
+  max-width: 300px;
+}
+.met{
+  margin-left: 35px;
+  max-width: 300px;
+}
+.tut{
+  margin-left: 70px;
+  max-width: 300px;
+}
+.seta{
+    position: absolute;
+    margin-top: 30px;
+    width: 20px;
+    margin-left: 20px;
+    transition: transform 0.2s; 
+    cursor: pointer;
+}
+.seta:hover, img:hover, .conta:hover{
+    transform: scale(1.1);
+  }
+button {
+    background-color: transparent; 
+    border: none;
+    cursor: pointer; 
+    padding: 0; 
+  }
+  
+  button .sair, .conta {
+    height: auto; 
+    transition: transform 0.2s; 
+    margin-top: 0%;
+    margin-left: 0px;
+    max-width: 30px;
+    width: 100%;
+    bottom: 5%;
+  }
+  
+  button:hover .sair {
+    transform: scale(1.1);
+  }
+.conta{
+    font-size: 14px;
+    background-color: rgb(163, 162, 170);
+    cursor: pointer;
+    max-width: 50px;
+    margin-left: 230px;
+}
+button:hover{
+    color:blue;
+}
+

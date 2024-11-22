@@ -1,0 +1,95 @@
+<!DOCTYPE html> 
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    <title>Tela de alteração do Gestor</title>
+    <style>
+      
+      .pont,.metr{
+            margin-left: 0px;
+        }
+        div{
+            margin-top: 20px;
+        }
+        .tuto{
+            margin-left: 30px;
+        }
+        .pontuacao{
+            margin-top: 10%;
+        }
+        button{
+            margin-top: 30px;
+            margin-left: 135px;
+        }
+        img{
+            margin-top: 15px;
+            width: 70px;
+        }
+        .seta{
+            width: 25px;
+            margin-top: 50px;
+        }
+        .volta{
+            position: absolute;
+            max-width: 30px;
+            margin-top: 50px;
+            margin-left: 10px;
+            
+        }
+        .alt{
+            position: absolute;
+            margin-left: 70px;
+            font-family: "Poppins";
+            font-size: 18px;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="pontuacao">
+        <h1 class="pont">Pontuação e premiação para o usuário:</h1> 
+        <a href="/aplicativo/tela geral do produto/pontuaçao/pontuaçao.html">
+            <img id="img-pontuacao" src="/aplicativo/imagem/Lista 1.png" alt="lista">
+            <img class="seta" src="/aplicativo/imagem/Seta. 3.png" alt="seta">
+        </a>
+    </div>
+
+    <div class="metricas">
+        <h1 class="metr">Métricas para produtividade do usuário:</h1> 
+        <a href="/aplicativo/tela geral do produto/metricas/metrica.html">
+            <img id="img-metricas" src="/aplicativo/imagem/Conferencia 1.png" alt="Conferencia">
+            <img class="seta" src="/aplicativo/imagem/Seta. 3.png" alt="seta">
+        </a>       
+    </div>
+
+    <div class="tutorias">
+        <h1 class="tuto">Tutoriais adaptados para usuário:</h1> 
+        <a href="/aplicativo/tela geral do produto/tutoriais/tutoriais.html">
+            <img id="img-tutorias" src="/aplicativo/imagem/Video 1.png" alt="Video">
+            <img class="seta" src="/aplicativo/imagem/Seta. 3.png" alt="seta">
+        </a>     
+    </div> 
+
+   
+    <button class="alt" onclick="alterarDados()">Alterar Dados do Usuário</button>
+    
+    <a href="/HomeAdm.html">
+        <button onclick="voltar()"> <img class="volta" src="/aplicativo/imagem/Voltar 5.png" alt="Sair"></i></button></a>
+
+    <script>
+        function alterarDados() {
+           
+            const confirmacao = confirm("Deseja alterar os dados do usuário?");
+            if (confirmacao) {
+                window.location.href = "/NovaPaginaAlteracao.html"; 
+            } else {
+                alert("Alteração não realizada.");
+            }
+        }
+    </script>
+
+</body>
+</html>
